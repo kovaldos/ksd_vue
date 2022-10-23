@@ -123,27 +123,24 @@
     }
     &-accordion-btn {
       position: relative;
-      pointer-events: none;
       @include vp-1023 {
-        pointer-events: all;
-        cursor: pointer;
         width: 100%;
         max-width: 485px;
       }
       &-icon {
         display: none;
+        width: 26px;
+        height: 26px;
+        color: $color-default-white;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 8px;
+        transition: transform $trans-default;
         @include vp-1023 {
-          width: 26px;
-          height: 26px;
-          color: $color-default-white;
           display: flex;
-          align-items: center;
-          justify-content: center;
-          position: absolute;
-          top: 0;
-          left: auto;
-          right: 8px;
-          transition: transform $trans-default;
         }
       }
     }
@@ -167,7 +164,6 @@
       list-style: none;
       padding: 0;
       margin: 0;
-      min-height: 100%;
       @include vp-1023 {
         padding-left: 0;
         &--contacts {

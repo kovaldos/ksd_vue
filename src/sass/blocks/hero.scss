@@ -48,8 +48,10 @@
 	&__slider {
 		height: 100%;
 		&-item {
+			display: block;
 			width: 100%;
 			height: 100%;
+			background-color: $color-bunting;
 			img {
 				width: 100%;
 				height: 100%;
@@ -76,6 +78,10 @@
 				opacity: 1;
 				box-shadow: none;
 				transition: background-color $trans-default, box-shadow $trans-default;
+				&-active {
+					background-color: $color-default-white;
+					box-shadow: 0 0 0 6px rgba($color-default-white, 0.5);
+				}
 				.progress-ring {
 					display: none;
 				}
@@ -105,10 +111,6 @@
 					}
 				}
 			}
-			.swiper-pagination-bullet-active {
-				background-color: $color-default-white;
-				box-shadow: 0 0 0 6px rgba($color-default-white, 0.5);
-			}
 		}
 	}
 	&__heading {
@@ -119,6 +121,10 @@
 		@include vp-767 {
 			padding: 26px 0 56px;
 			text-align: left;
+			min-height: 253px;
+		}
+		@include vp-374 {
+			min-height: 319px;
 		}
 	}
 

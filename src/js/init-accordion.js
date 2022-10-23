@@ -1,8 +1,4 @@
-// Инициализация аккордеона -- Начало --
-// Accordion init -- Start --
-
 import { Accordions } from "./accordions";
-
 let accordions;
 
 const initAccordions = () => {
@@ -12,6 +8,3 @@ const initAccordions = () => {
 };
 
 export { initAccordions, accordions };
-
-// Инициализация аккордеона -- Конец --
-// Accordion init -- End --

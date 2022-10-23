@@ -2,7 +2,9 @@
   <SVGSprite />
   <div class="wrapper">
     <VueHeader />
-    <main></main>
+    <main>
+      <VueHero />
+    </main>
     <!-- <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -16,15 +18,19 @@
 import SVGSprite from "./components/SVGSprite.vue";
 import VueHeader from "./components/VueHeader.vue";
 import VueFooter from "./components/footer/VueFooter.vue";
+import VueHero from "./components/blocks/VueHero.vue";
 export default {
   data() {
     return {};
   },
-  components: { SVGSprite, VueHeader, VueFooter },
+  components: { SVGSprite, VueHeader, VueFooter, VueHero },
 };
 </script>
 
 <style lang="scss">
+@import "./sass/vendor/normalize";
+@import "./sass/vendor/swiper";
+
 @import "./sass/variables";
 @import "./sass/mixins";
 @import "./sass/functions";
