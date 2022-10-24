@@ -5,6 +5,8 @@
     <main>
       <VueHero />
       <VueDirections />
+      <VueAboutSection />
+      <VueHistory />
     </main>
     <!-- <nav>
       <router-link to="/">Home</router-link> |
@@ -21,11 +23,27 @@ import VueHeader from "./components/VueHeader.vue";
 import VueFooter from "./components/footer/VueFooter.vue";
 import VueHero from "./components/blocks/VueHero.vue";
 import VueDirections from "./components/blocks/VueDirections.vue";
+import VueAboutSection from "./components/blocks/VueAboutSection.vue";
+import VueHistory from "./components/blocks/VueHistory.vue";
+import { initAccordions } from "./js/init-accordion";
+import { initTabs } from "./js/init-tabs";
 export default {
   data() {
     return {};
   },
-  components: { SVGSprite, VueHeader, VueFooter, VueHero, VueDirections },
+  components: {
+    SVGSprite,
+    VueHeader,
+    VueFooter,
+    VueHero,
+    VueDirections,
+    VueAboutSection,
+    VueHistory,
+  },
+  mounted() {
+    initAccordions();
+    initTabs();
+  },
 };
 </script>
 
