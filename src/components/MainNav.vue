@@ -79,7 +79,7 @@
 
 <script>
 import { initBurgerMenu } from "../js/init-burger-menu";
-import { initAccordions } from "../js/init-accordion";
+// import { initAccordions } from "../js/init-accordion";
 export default {
   data() {
     return {
@@ -104,7 +104,7 @@ export default {
         subLinks: [
           {
             id: "subnav-1",
-            href: "demolition",
+            href: "/demolition/",
             text: "Демонтаж",
           },
           {
@@ -233,7 +233,7 @@ export default {
   },
   mounted() {
     initBurgerMenu();
-    initAccordions();
+    // initAccordions();
   },
 };
 </script>
