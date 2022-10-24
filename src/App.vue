@@ -4,6 +4,7 @@
     <VueHeader />
     <main>
       <VueHero />
+      <VueDirections />
     </main>
     <!-- <nav>
       <router-link to="/">Home</router-link> |
@@ -19,11 +20,12 @@ import SVGSprite from "./components/SVGSprite.vue";
 import VueHeader from "./components/VueHeader.vue";
 import VueFooter from "./components/footer/VueFooter.vue";
 import VueHero from "./components/blocks/VueHero.vue";
+import VueDirections from "./components/blocks/VueDirections.vue";
 export default {
   data() {
     return {};
   },
-  components: { SVGSprite, VueHeader, VueFooter, VueHero },
+  components: { SVGSprite, VueHeader, VueFooter, VueHero, VueDirections },
 };
 </script>
 
